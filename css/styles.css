@@ -14,6 +14,10 @@ h1
   top: 350px;
   text-align: center;
 }
+#order
+{
+  background-color: red;
+}
 .container-fluid ul {
     list-style-type: none;
     margin: 0;
@@ -23,7 +27,20 @@ h1
     position: fixed; /* Make it stick, even on scroll */
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
-#nested-menu
+.container-fluid ul li:hover
 {
-  display: none;
+  background-color: yellow;
+}
+.headingoneachpage label
+{
+  border: 1px solid black;
+
+}
+.menuoptions
+{
+  padding-left: 10px;
+}
+.pizzaimage
+{
+display: block;
 }
