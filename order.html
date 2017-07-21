@@ -23,8 +23,41 @@
     <div class="pizza" id="container"><h1>WELCOME TO PARUL'S PIZZA</h1>
       <img id = "image" src="img/headerimg.jpg" alt="header pizza image" />
     </div>
+    <form id="porder">
       <h2>PLACE YOUR ORDER</h2>
-      
-    <div>
+      <div>
+      <label for="pizzaorder">Enter your choice of pizza</label>
+      <br>
+      <div>
+        <select class="form-control" id="p">
+          <option>--Please select a pizza--</option>
+        </select>
+      </div>
+        <br>
+        <br>
+        <label for="sizeorder">Enter your choice of size</label>
+        <br>
+        <div id="s">
+          <input type="checkbox" name="size" value="small">Small<br>
+          <input type="checkbox" name="size" value="medium">Medium<br>
+          <input type="checkbox" name="size" value="large"> Large<br>
+        </div>
+
+          <br><br>
+        <label for="topping">Enter your choice of topings</label>
+        <br>
+        <div id="t">
+          <input type="checkbox" name="topping" value="PEPPERONI">PEPPERONI<br>
+          <input type="checkbox" name="topping" value="SAUSAGE,">SAUSAGE<br>
+          <input type="checkbox" name="topping" value="HAM">HAM<br>
+          <input type="checkbox" name="topping" value="PINEAPPLE">PINEAPPLE<br>
+          <input type="checkbox" name="topping" value="BACON"> BACON<br>
+        </div>
+          <br>
+          <br>
+          <button type="submit" class="btn btn-danger submit">Place Your Order</button>
+      </form>
+      </div>
+    <div id="billing">
 
     </div>
