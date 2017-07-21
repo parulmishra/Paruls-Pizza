@@ -72,11 +72,11 @@ $(document).ready(function()
           {
             pizzarate=pizzarate+13.99;
           }
-      
+
         if(toppings.length >0)
         {
-          for(int i=0; i<toppings.length; i++)
-          toppingrate=toppingrate+1;
+          for(var i=0; i<toppings.length; i++)
+          toppingrate = toppingrate+1;
         }
       bill=bill+pizzarate+toppingrate;
       $("#billing").append("Pizza charges " + pizzaselected + " " + pizzarate);
