@@ -20,20 +20,20 @@ $(document).ready(function()
   $("select").change(function(){
 
     var menuOptionSelected = $("#menupageoptions option:selected").val();
-    if(menuOptionSelected.toString() === "Pizza")
+    if(menuOptionSelected == "Pizza")
     {
       console.log(menuOptionSelected);
       $(".pizzaimage").show();
       $(".wingsimage").hide();
       $(".drinksimage").hide();
     }
-    else if(menuOptionSelected.toString() === "Wings")
+    else if(menuOptionSelected == "Wings")
     {
       $(".pizzaimage").hide();
       $(".wingsimage").show();
       $(".drinksimage").hide();
     }
-    else if(menuOptionSelected.toString() === "Drinks")
+    else if(menuOptionSelected == "Drinks")
     {
       $(".pizzaimage").hide();
       $(".wingsimage").hide();
@@ -60,11 +60,11 @@ $(document).ready(function()
       {
         size=$("input:checkbox[name=size]:checked").val();
       }
-          if(size === small)
+          if(size === "small")
           {
             pizzarate= pizzarate+4.99;
           }
-          else if(size === medium)
+          else if(size === "medium")
           {
             pizzarate=pizzarate +11.99;
           }
@@ -78,7 +78,7 @@ $(document).ready(function()
           for(var i=0; i<toppings.length; i++)
           toppingrate = toppingrate+1;
         }
-      bill=bill+pizzarate+toppingrate;
+      bill = bill+pizzarate+toppingrate;
       $("#billing").append("Pizza charges " + pizzaselected + " " + pizzarate);
       $("#billing").append("Toppings charges" + " " + toppingrate);
       $("#billing").append("Total bill" + " " + bill);
