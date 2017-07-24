@@ -31,7 +31,7 @@ _Use git to check whether proper commit is done or not. Check whether cloning is
 * _CSS_
 * _Javascript_
 * _jquery_
-*_Markdown_
+* _Markdown_
 
 ### License
 
