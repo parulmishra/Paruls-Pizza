@@ -9,8 +9,8 @@
 
 * _Example Input :_ 
   Select your choice of pizza : --Please select a pizza--
- * _Example Output : _
-	 alert: Please select a pizza
+  Example Output :
+  alert: Please select a pizza
 
 * _Example Input :_
   Select your choice of pizza : Cheese Pizza
@@ -19,7 +19,7 @@
   Enter your choice of sauce: sauce1
   Enter your choice of toppings: nothing selected
   Click on the "Place Your Order" button
- * _Example Output :_
+  Example Output :
   RECEIPT
   Items:	Rates:
   small	4.99
@@ -35,7 +35,7 @@
   Enter your choice of sauce: sauce2
   Enter your choice of toppings: All the toppings selected
   Click on the "Place Your Order" button
-  * _Example Output :_
+  Example Output :
   RECEIPT
   Items:	Rates:
   medium	11.99
