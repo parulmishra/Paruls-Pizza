@@ -1,20 +1,36 @@
-
-#image {
- width: 100%;
- height: 30%;
- align: middle;
+div.rates
+{
+	padding-left:20px;
+	font-size:20px;
+	padding-bottom:40px;
+	padding-top:70px;
 }
-
+img#image {
+ width: 80%;
+ height: 60%;
+}
+form#porder
+{
+	padding-left:20px;
+	padding-bottom:40px;
+}
+div#billing
+{
+	width:80%;
+	height:60%;
+	font-size :20px;
+}
 h1
 {
   z-index: 100;
   position: absolute;
   color: white;
-  font-size: 100px;
+  font-size: 60px;
   font-weight: bold;
   top: 350px;
   text-align: center;
 }
+
 #order
 {
   background-color: red;
@@ -23,7 +39,7 @@ h1
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 100%%;
+    width: 100%;
     background-color: black;/* Full height */
     position: fixed; /* Make it stick, even on scroll */
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
@@ -37,31 +53,17 @@ h1
   border: 1px solid black;
 
 }
-.menuoptions
-{
-  padding-left: 10px;
-}
-.pizzaimage
+.pizzaimages
 {
   float: right;
-display: none;;
+  display: none;;
 }
-.wingsimage
+div#billing
 {
-float: right;
-display: none;;
-}
-.drinksimage
-{
-  float: right;
-display: none;;
-}
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-
-}
-table
-{
-  border-spacing: 5px;
+	display:none;
+	padding-left:20px;
+	padding-top:20px;
+	padding-bottom:40px;
+	padding-right:40px;
+	
 }

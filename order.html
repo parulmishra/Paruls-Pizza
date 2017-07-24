@@ -20,44 +20,88 @@
       </ul>
      </div>
     </nav>
-    <div class="pizza" id="container"><h1>WELCOME TO PARUL'S PIZZA</h1>
-      <img id = "image" src="img/headerimg.jpg" alt="header pizza image" />
+	<div style="display: flex; justify-content: center">
+		<h1>WELCOME TO PARUL'S PIZZA</h1>
     </div>
+    <center>
+	<img id="image" src="img/headerimg.jpg" alt="header pizza image"/>
+	</center>
     <form id="porder">
       <h2>PLACE YOUR ORDER</h2>
+	  <br><br>
       <div>
       <label for="pizzaorder">Enter your choice of pizza</label>
       <br>
       <div>
-        <select class="form-control" id="p">
+        <select class="form-control" id="pizza">
           <option>--Please select a pizza--</option>
         </select>
       </div>
         <br>
-        <br>
         <label for="sizeorder">Enter your choice of size</label>
         <br>
-        <div id="s">
-          <input type="checkbox" name="size" value="small">Small<br>
-          <input type="checkbox" name="size" value="medium">Medium<br>
-          <input type="checkbox" name="size" value="large"> Large<br>
+        <div id="size">
+          <input type="radio" name="size" value="small" checked="checked">Small<br>
+          <input type="radio" name="size" value="medium">Medium<br>
+          <input type="radio" name="size" value="large"> Large<br>
         </div>
-
-          <br><br>
+		  <label for="crustorder">Enter your choice of crust</label>
+		  <br>
+		  <div id="crust">
+          <input type="radio" name="crust" value="crust1" checked="checked">Crust1<br>
+          <input type="radio" name="crust" value="crust2">Crust2<br>
+          <input type="radio" name="crust" value="crust3">Crust3<br>
+        </div>
+		  <label for="sauceorder">Enter your choice of sauce</label>
+		  <br>
+		  <div id="sauce">
+          <input type="radio" name="sauce" value="sauce1" checked="checked">Sauce1<br>
+          <input type="radio" name="sauce" value="sauce2">Sauce2<br>
+          <input type="radio" name="sauce" value="sauce3">Sauce3<br>
+        </div>
         <label for="topping">Enter your choice of topings</label>
         <br>
-        <div id="t">
-          <input type="checkbox" name="topping" value="PEPPERONI">PEPPERONI<br>
-          <input type="checkbox" name="topping" value="SAUSAGE,">SAUSAGE<br>
-          <input type="checkbox" name="topping" value="HAM">HAM<br>
-          <input type="checkbox" name="topping" value="PINEAPPLE">PINEAPPLE<br>
-          <input type="checkbox" name="topping" value="BACON"> BACON<br>
+        <div id="topping">
+          <input type="checkbox" name="topping" value="Pepperoni">PEPPERONI<br>
+          <input type="checkbox" name="topping" value="Sausage">SAUSAGE<br>
+          <input type="checkbox" name="topping" value="Ham">HAM<br>
+          <input type="checkbox" name="topping" value="Pineapple">PINEAPPLE<br>
+          <input type="checkbox" name="topping" value="Bacon"> BACON<br>
         </div>
           <br>
           <br>
           <button type="submit" class="btn btn-danger submit">Place Your Order</button>
       </form>
+	  
       </div>
     <div id="billing">
-
+	<table style="width:80%">
+  <tr>
+  <th colspan="2" style="text-align:center">RECEIPT</th>
+  </tr>
+  <tr>
+    <th>Items:</th>
+    <th>Rates:</th> 
+  </tr>
+  <tr>
+    <td id="pizzasize"></td>
+    <td id="pizzacost"></td>
+  </tr>
+  <tr>
+    <td id="crustname"></td>
+    <td id="crustcost"></td>
+  </tr>
+  <tr>
+    <td id="saucename"></td>
+    <td id="saucecost"></td>
+  </tr>
+  <tr>
+    <td id="toppingnames"></td>
+    <td id="toppingcost"></td> 
+  </tr>
+  <tr>
+  <td><strong>Total Cost<strong></td>
+  <td id="totalcost"></td>
+  </tr>
+</table>
     </div>
