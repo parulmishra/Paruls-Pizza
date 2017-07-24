@@ -1,7 +1,5 @@
 
-var menu= ["Pizza","Wings","Drinks"];
 var pizza=["Cheese Pizza", "MEAT LOVER'S PIZZA","PEPPERONI PIZZA", "SUPREME PIZZA","CREATE YOUR OWN"];
-
 var pizzaSizeCost = 0;
 var pizzaCrustCost = 0;
 var pizzatoppingCost = 0;
@@ -97,16 +95,36 @@ Pizza.prototype.Calculate=function()
 }
 $(document).ready(function(event)
 {
-  for(var i=0; i < menu.length; i++)
-  {
-   $("select#menupageoptions").append("<option>" + menu[i]+ "</option>");
-  }
   for(var i=0; i < pizza.length; i++)
   {
    $("select#pizza").append("<option>" + pizza[i]+ "</option>");
   }
-
-  
+	
+  $("select#pizza").change(function()
+ {
+	var pizzaSelected = $("#pizza option:selected").val();
+	switch(pizzaSelected)
+	{
+	case "Cheese Pizza":
+	$("#selectedImage").html("<img src='img/cheesepizza.png' class='smallpizzaimage'/>");
+	break;
+	case "MEAT LOVER'S PIZZA":
+	$("#selectedImage").html("<img src='img/classicmeatlover.png' class='smallpizzaimage'/>");
+	break;
+	case "PEPPERONI PIZZA":
+	$("#selectedImage").html("<img src='img/pepperoni.png' class='smallpizzaimage'/>");
+	break;
+	case "SUPREME PIZZA":
+	$("#selectedImage").html("<img src='img/classicsupreme.png' class='smallpizzaimage'/>");
+	break;
+	case "CREATE YOUR OWN":
+	$("#selectedImage").html("<img src='img/createyourownpizza.png' class='smallpizzaimage'/>");
+	break;
+	default:
+	$("#selectedImage").html("");
+	break;
+	}	
+ });
 
   $("form#porder").submit(function(event)
   {

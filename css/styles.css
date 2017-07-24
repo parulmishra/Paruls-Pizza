@@ -9,6 +9,15 @@ img#image {
  width: 80%;
  height: 60%;
 }
+img.smallpizzaimage {
+	width: 150%;
+	height: 150%;
+}
+div#selectedImage
+{
+	float:right;
+	padding-right:20%;
+}
 form#porder
 {
 	padding-left:20px;
